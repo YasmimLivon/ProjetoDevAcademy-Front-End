@@ -93,7 +93,7 @@ if(registroform){
     const submitRegistro = document.getElementById("submit-btn");
     const formRegistro = document.getElementById("register-form");
     const perfil = document.getElementById("role");
-    const confirmarSenhaRegistro = documen.getElementById("confirmar-senha");
+    const confirmarSenhaRegistro = document.getElementById("confirmar-senha");
 
     formRegistro.addEventListener('submit', async (event) => {
         event.preventDefault();
@@ -110,7 +110,7 @@ if(registroform){
             submitRegistro.disabled = true;
             registroform.textContent = 'Aguarde...';
 
-            const resposta = await fetch (`${API_URL}/register`, {
+            const resposta = await fetch (`${API_URL}/auth/register`, {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({nome, email, senha, role})
