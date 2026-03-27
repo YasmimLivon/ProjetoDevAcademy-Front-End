@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Curso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+    <div class="message-box"></div>
+
+    <div id="curso-section">
+
+    <form id="cursos-form">
+    <div id="form-group">
+    <label for="titulo">Título do curso:</label>
+    <input type="text" id="title" required placeholder="Digite o título do curso...">
+    </div>
+
+    <div id="form-group">
+    <label for="descricao">Descrição:</label>
+    <input type="text" id="descricao" required placeholder="Descreva o curso...">
+    </div>
+
+    <div id="form-group">
+    <label for="cargahoraria">Carga Horária:</label>
+    <input type="number" id="cargahoraria" required placeholder="Ex: 40 horas">
+    </div>
+
+    <button id= "submit-btn" type="submit">Registrar o curso</button>
+    </form>
+
+    <div class="nav-link-container">
+    <a href="login.html">Voltar para o Paínel</a>
+    </div>
+    </div>
+    </div>
+
+    <script src="./cursos.js" defer></script>
+</body>
+</html>
